@@ -41,12 +41,22 @@ export function Navbar() {
                 <div className="flex items-center justify-between h-20">
 
                     {/* Logo */}
+
                     <button
                         onClick={() => navigate('/')}
-                        className="text-white font-black text-2xl tracking-wide select-none focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-lg"
+                        className="flex items-center space-x-3 cursor-pointer"
                         aria-label="Go to home"
                     >
-                        Syndicate<span className="text-[#209cff]">-AI</span>
+                        {/* <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl flex items-center justify-center">
+                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div> */}
+
+                        <img src="/favicon.png" alt="Syndicate AI Logo" style={{ height: "40px" }} />
+                        <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
+                            Syndicate <span className='text-white'>AI</span>
+                        </span>
                     </button>
 
                     {/* Desktop Menu */}

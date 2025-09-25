@@ -11,7 +11,7 @@ const Home = () => {
             <color attach="background" args={['#0a0a1a']} /> {/* Set background color of the canvas */}
             <ScrollControls pages={7} damping={0.25}>
                 <Scene />
-                <Scroll html fullscreen>
+                <Scroll html fullscreen="true">
                     <Overlay />
                 </Scroll>
             </ScrollControls>
